@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Web Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+      <!-- task1 -->
+      <form>
+        <!-- Select Menu for Favorite Programming Language -->
+        <label for="language">Choose your favorite programming language:</label><br>
+        <select id="language" name="language">
+          <option value="python">Python</option>
+          <option value="javascript">JavaScript</option>
+          <option value="java">Java</option>
+          <option value="csharp">C#</option>
+          <option value="ruby">Ruby</option>
+        </select><br><br>
+      
+        <!-- Radio Buttons for Expertise Level -->
+        <label>Indicate your level of expertise:</label><br>
+        <input type="radio" id="beginner" name="expertise" value="beginner">
+        <label for="beginner">Beginner</label><br>
+      
+        <input type="radio" id="intermediate" name="expertise" value="intermediate">
+        <label for="intermediate">Intermediate</label><br>
+      
+        <input type="radio" id="advanced" name="expertise" value="advanced">
+        <label for="advanced">Advanced</label><br><br>
+      
+        <!-- Checkboxes for Development Platforms -->
+        <label>Select your preferred development platforms:</label><br>
+        <input type="checkbox" id="web" name="platform" value="web">
+        <label for="web">Web</label><br>
+      
+        <input type="checkbox" id="mobile" name="platform" value="mobile">
+        <label for="mobile">Mobile</label><br>
+      
+        <input type="checkbox" id="desktop" name="platform" value="desktop">
+        <label for="desktop">Desktop</label><br><br>
+      
+        <button type="submit">Submit</button>
+      </form>
+    
+    <!-- task2 -->  
+    <form aria-label="Programming preferences form">
+        <!-- Select Menu with ARIA Label -->
+        <label for="language">Choose your favorite programming language:</label><br>
+        <select id="language2" name="language2" aria-required="true">
+          <option value="python">Python</option>
+          <option value="javascript">JavaScript</option>
+          <option value="java">Java</option>
+          <option value="csharp">C#</option>
+          <option value="ruby">Ruby</option>
+        </select><br><br>
+      
+        <!-- Radio Buttons for Expertise Level with ARIA Grouping -->
+        <fieldset>
+          <legend>Indicate your level of expertise:</legend>
+          <input type="radio" id="beginner1" name="expertise" value="beginner1">
+          <label for="beginner">Beginner</label><br>
+      
+          <input type="radio" id="intermediate2" name="expertise" value="intermediate2">
+          <label for="intermediate">Intermediate</label><br>
+      
+          <input type="radio" id="advanced3" name="expertise" value="advanced3">
+          <label for="advanced">Advanced</label><br><br>
+        </fieldset>
+      
+        <!-- Checkboxes for Development Platforms with ARIA Descriptions -->
+        <fieldset aria-labelledby="platforms">
+          <legend id="platforms">Select your preferred development platforms:</legend>
+          <input type="checkbox" id="web2" name="platform" value="web2" aria-label="Web Development">
+          <label for="web">Web</label><br>
+      
+          <input type="checkbox" id="mobile2" name="platform" value="mobile2" aria-label="Mobile Development">
+          <label for="mobile">Mobile</label><br>
+      
+          <input type="checkbox" id="desktop2" name="platform" value="desktop" aria-label="Desktop Development">
+          <label for="desktop">Desktop</label><br><br>
+        </fieldset>
+      
+        <button type="submit" aria-label="Submit form">Submit</button>
+      </form>
+
+    </body>
+</html>
